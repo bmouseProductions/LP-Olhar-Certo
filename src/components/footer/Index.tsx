@@ -14,7 +14,7 @@ export default function Footer() {
             
             </div>
 
-            <p>Copyright Ⓒ 2023 New Aligner.</p>
+            <p>Copyright Ⓒ 2023 Olhar Certo.</p>
 
             <a  className='' href="https://www.bmouseproductions.com/" target="_blank" rel="noopener noreferrer"> Desenvolvido por <strong>BMOUSE PPRODUCTIONS</strong> </a>
         </footer>

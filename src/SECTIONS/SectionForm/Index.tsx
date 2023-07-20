@@ -13,7 +13,7 @@ export default function SectionForm(){
                             <h2 className=" mb-5 text-4xl text-center font-semibold">
                                 Seja um franqueado Olhar Certo e fature, em média,
                             </h2>
-                            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-[#029286] mb-5">2 MILHÕES</h1>
+                            <h1 className="text-6xl lg:text-7xl font-bold text-center text-[#029286] mb-5">2 MILHÕES</h1>
                             <p className= 'mb-5 text-4xl text-center font-semibold'>
                                 por ano em um dos setores que mais cresce no mundo.
                             </p>
