@@ -66,7 +66,7 @@ html, body{
 
 /*TEXTO GRADIENTE*/
 .text-gradient {
-  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#faf1de .89%,#eec18b 17.23%,#edc27d 42.04%,#ebbd7d 55.12%,#d6945e 71.54%,#ff7e00 100%);
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#ffffff .89%,#ffffff 17.23%,#ffffff 42.04%,#ffffff 55.12%,#ffffff 71.54%,#ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -10,11 +10,11 @@ export default function SectionBanner() {
                 <div className='w-full mt-5 md:mt-10 px-5 md:px-0 flex flex-col items-center md:w-[60%] max-w-[600px] md:justify-center' data-aos="fade-right" data-aos-duration="1500">
                     <div className='w-full flex flex-col'>
                         <img src={logo} alt="" />
-                        <span className='w-full text-[20px] font-normal text-center mt-4 text-white border-[2px] rounded-xl'>Seja um credenciado New Aligner</span>
+                        <span className='w-full text-[20px] font-normal text-center mt-4 text-white border-[2px] rounded-xl'>Seja um franqueado Olhar Certo</span>
                     </div>
-                    <h2 className='mt-4 mb-10 text-2xl xl:text-3xl font-semibold text-white text-center  '>Você pode ganhar até 5 vezes mais com o New Aligner.</h2>
+                    <h2 className='mt-4 mb-10 text-2xl xl:text-3xl font-semibold text-white text-center  '>Um franqueado Olhar Certo fatura em média 2 milhões por ano.</h2>
                     <Botao>
-                        Quero me credenciar
+                        Quero ser um franqueado
                     </Botao>
                 </div>
             </div>

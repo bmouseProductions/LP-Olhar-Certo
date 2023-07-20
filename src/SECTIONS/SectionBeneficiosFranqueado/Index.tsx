@@ -78,7 +78,7 @@ interface CardProps{
 
 function Card( { title, img, text, style }:CardProps ){
     return(
-        <div className='w-[300px] h-[250px] p-2 flex flex-col items-center'>
+        <div className='w-[300px] h-[280px] p-2 flex flex-col items-center  bg-white rounded shadow-md pt-5'>
             <img src={img} className={style} alt="" />
             <h3 className='font-semibold text-[22px] my-3'>{title}</h3>
             <p className='text-center  '>{text}</p>
@@ -116,7 +116,7 @@ export default function SectionBeneficiosFranqueado(){
 
                         <div className='w-full flex justify-center mt-10'>
                             <Botao>
-                                Quero ser um credenciado
+                                Quero ser um franqueado
                             </Botao>
                         </div>
                         
