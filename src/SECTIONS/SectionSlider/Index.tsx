@@ -5,7 +5,7 @@ import imagemPremiacao  from '../../assets/premiosOC.webp'
 import image1 from '../../assets/slides/OlharCerto1.webp'
 import image2 from '../../assets/slides/OlharCerto2.webp'
 import image3 from '../../assets/slides/OlharCerto3.webp'
-import image4 from '../../assets/slides/OlharCerto4.webp'
+import image4 from '../../assets/slides/olharCerto4.webp'
 
 
 
