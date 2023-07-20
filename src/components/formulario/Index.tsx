@@ -8,6 +8,10 @@ interface FormData {
   nome: string;
   telefone: string;
   email: string;
+  estado: string;
+  cidade: string;
+  capital: string;
+  emailMarketing: boolean;
 }
 
 
@@ -53,15 +57,19 @@ export const Formulario = () => {
     nome: "",
     telefone: "",
     email: "",
+    estado: "",
+    cidade: "",
+    capital: "",
+    emailMarketing: false,
   });
 
 
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { id, value } = e.target;
+    const { id, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [id]: value
+      [id]: value === "checkbox" ? checked : value,
     }));
   };
 
@@ -130,7 +138,7 @@ export const Formulario = () => {
       
       <select
         name=""
-        id=""
+        id="capital"
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       >
         {
@@ -140,13 +148,20 @@ export const Formulario = () => {
       </select>
 
       <div className="flex gap-3 mb-2">
-        <input className="w-4" type="checkbox" checked name="" id="" />
-        <p>Aceito receber ofertas, novidades, conteúdos informativos e publicitários.</p>
+        <input 
+          className="w-4" 
+          type="checkbox"  
+          name="" 
+          id="emailMarketing" 
+          checked={formData.emailMarketing}
+          onChange={handleChange}
+        />
+        <label htmlFor="emailMarketing">Aceito receber ofertas, novidades, conteúdos informativos e publicitários.</label>
       </div>
 
       <div className="flex gap-3 mb-5 w-[100%] ">
-        <input className="w-4" type="checkbox" checked required name="termos politica de privacidade" id="" />
-        <p>Aceito a <a className="text-blue-600 underline" href="https://olharcerto.com.br/politica-de-privacidade/" target="_blank">política de privacidade</a>.</p>
+        <input className="w-4" type="checkbox"  required name="termos politica de privacidade" id="privacidade" />
+        <label htmlFor="privacidade">Aceito a <a className="text-blue-600 underline" href="https://olharcerto.com.br/politica-de-privacidade/" target="_blank">política de privacidade</a>.</label>
       </div>
       
     
