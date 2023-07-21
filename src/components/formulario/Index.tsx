@@ -86,7 +86,7 @@ export const Formulario = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} method="post" className="w-full sm:w-auto flex flex-col">
+    <form onSubmit={handleSubmit} className="w-full sm:w-auto flex flex-col">
       <label className="font-bold" htmlFor="nome">Nome:</label>
       <input
         type="text"
