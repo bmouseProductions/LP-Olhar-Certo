@@ -80,6 +80,7 @@ export const Formulario = () => {
 
     try {
       await enviarEmail(formData);
+      console.log(formData)
     } catch (error) {
       console.error("Something is wrong", error);
     }
