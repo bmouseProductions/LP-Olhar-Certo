@@ -55,13 +55,15 @@ export const Formulario = () => {
 
   const [formData, setFormData] = useState<FormData>({
     nome: "",
-    telefone: "",
     email: "",
+    telefone: "",
     estado: "",
     cidade: "",
     capital: "",
     emailMarketing: false,
   });
+
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { id, value, type, checked } = e.target;
@@ -71,14 +73,25 @@ export const Formulario = () => {
     }));
   };
 
+  const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
+      setIsSending(true)
       await enviarEmail(formData);
-      console.log(formData)
+      console.log("Dados", formData)
     } catch (error) {
       console.error("Something is wrong", error);
+    } finally{
+      setIsSending(false)
     }
   };
 
@@ -88,8 +101,9 @@ export const Formulario = () => {
       <input
         type="text"
         id="nome"
-        name="nome"
-        onChange={handleChange}
+         name="nome"
+         onChange={handleChange}
+         value={formData.nome}
         required
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       />
@@ -98,7 +112,8 @@ export const Formulario = () => {
       <input
         type="text"
         id="email"
-        name="email"
+         name="email"
+         value={formData.email}
         onChange={handleChange}
         required
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
@@ -108,7 +123,8 @@ export const Formulario = () => {
       <input
         type="text"
         id="telefone"
-        name="telefone"
+         name="telefone"
+         value={formData.telefone}
         onChange={handleChange}
         required
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
@@ -116,7 +132,9 @@ export const Formulario = () => {
 
       <label className="font-bold" htmlFor="estado">Estado:</label>
       <select 
-        name=""
+         name="estado"
+         value={formData.estado}
+         onChange={handleSelectChange}
         id="estado"
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       >
@@ -130,15 +148,18 @@ export const Formulario = () => {
       <input
         type="text"
         id="cidade"
-        name="cidade"
+         name="cidade"
+         value={formData.cidade}
         onChange={handleChange}
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       />
 
       
       <select
-        name=""
+         name="capital"
         id="capital"
+        value={formData.capital}
+        onChange={handleSelectChange}
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       >
         {
@@ -151,8 +172,9 @@ export const Formulario = () => {
         <input 
           className="w-4" 
           type="checkbox"  
-          name="" 
+           name="emailMarketing" 
           id="emailMarketing" 
+          // value={formData.emailMarketing}
           checked={formData.emailMarketing}
           onChange={handleChange}
         />
@@ -172,6 +194,7 @@ export const Formulario = () => {
         id="styleButton"
         endIcon={<SendIcon />}
         className="max-w-[600px]"
+        disabled={isSending}
       >
         Eu quero me credenciar
       </Button>

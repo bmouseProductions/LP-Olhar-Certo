@@ -14,19 +14,25 @@ interface propsFormData {
     emailMarketing: boolean; 
 }
 
+
+
 export const enviarEmail = async (formData: propsFormData) => {
-    const { nome, telefone, email, estado, cidade, capital, emailMarketing } = formData
+    const {nome, telefone, email, estado, cidade, capital, emailMarketing} = formData;
 
-    const formDataToSend = new FormData();
-    formDataToSend.append("nome", nome);
-    formDataToSend.append("telefone", telefone);
-    formDataToSend.append("email", email);
-    formDataToSend.append("estado", estado);
-    formDataToSend.append("cidade", cidade);
-    formDataToSend.append("capital", capital);
-    formDataToSend.append("emailMarketing", emailMarketing ? "true" : "false"); // Converta para string antes de adicionar ao FormData
+    const dataToSend = {
+        nome,
+        telefone,
+        email,
+        estado,
+        cidade,
+        capital,
+        emailMarketing
+    }
+    try{
+        const response = await api.post("/send", dataToSend)
+        return response.data
+    } catch (error: any) {
+        throw new Error("Erro" + error.message)
+    }
 
-    return await api.post("/send", formDataToSend, {
-        headers: { "Content-Type": "multipart/form-data" },
-    });
 }
