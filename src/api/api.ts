@@ -24,7 +24,7 @@ export const enviarEmail = async (formData: propsFormData) => {
     formDataToSend.append("estado", estado);
     formDataToSend.append("cidade", cidade);
     formDataToSend.append("capital", capital);
-    formDataToSend.append("emailMarketing", String(emailMarketing)); // Converta para string antes de adicionar ao FormData
+    formDataToSend.append("emailMarketing", emailMarketing ? "true" : "false"); // Converta para string antes de adicionar ao FormData
 
     return await api.post("/send", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
