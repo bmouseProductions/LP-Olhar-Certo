@@ -69,7 +69,7 @@ export const Formulario = () => {
     const { id, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [id]: value === "checkbox" ? checked : value,
+      [id]: type === "checkbox" ? checked : value,
     }));
   };
 
