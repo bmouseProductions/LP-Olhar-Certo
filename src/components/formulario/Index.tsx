@@ -4,17 +4,6 @@ import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
 
-interface FormData {
-  nome: string;
-  telefone: string;
-  email: string;
-  estado: string;
-  cidade: string;
-  capital: string;
-  emailMarketing: boolean;
-}
-
-
 const estados = [
   {estado: "Estado"},
   {estado: "Acre"},
@@ -52,7 +41,18 @@ const capitais = [
   {capital: 'Acima de R$500 mil'},
 ]
 
+interface FormData {
+  nome: string;
+  telefone: string;
+  email: string;
+  estado: string;
+  cidade: string;
+  capital: string;
+  emailMarketing: boolean;
+}
+
 export const Formulario = () => {
+
   const [formData, setFormData] = useState<FormData>({
     nome: "",
     telefone: "",
@@ -63,8 +63,6 @@ export const Formulario = () => {
     emailMarketing: false,
   });
 
-
-
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { id, value, type, checked } = e.target;
     setFormData((prevData) => ({
@@ -72,8 +70,6 @@ export const Formulario = () => {
       [id]: type === "checkbox" ? checked : value,
     }));
   };
-
- 
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
