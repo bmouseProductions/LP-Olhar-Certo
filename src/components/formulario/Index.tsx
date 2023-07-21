@@ -94,6 +94,7 @@ export const Formulario = () => {
         id="nome"
         name="nome"
         onChange={handleChange}
+        required
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       />
 
@@ -103,6 +104,7 @@ export const Formulario = () => {
         id="email"
         name="email"
         onChange={handleChange}
+        required
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       />
 
@@ -112,6 +114,7 @@ export const Formulario = () => {
         id="telefone"
         name="telefone"
         onChange={handleChange}
+        required
         className="mb-5 w-[100%]  h-[50px]  md:w-[600px] xl:w-[600px] bg-gray-200  rounded text-black px-2"
       />
 
