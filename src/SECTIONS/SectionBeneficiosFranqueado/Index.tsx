@@ -63,7 +63,7 @@ const icons = [
 
     {
         img: multidiciplinar,
-        title:"Clínicas multidiciplinar" ,
+        title:"Clínicas multidisciplinares" ,
         text:"Os mais avançados exames e tratamentos.",
         style:"w-[111px]" //syles gerais
     },
@@ -105,7 +105,7 @@ export default function SectionBeneficiosFranqueado(){
                     
                     <div>
                         <h1 className="min-h-[50px]  md:min-h-[50px] xl:min-h-[70px] mb-10 text-4xl xl:text-5xl text-center font-bold text-[#029286] ">
-                            Ao se tornar franqueado da Olhar Certo você ainda conta com:
+                        Ao se tornar franqueado da Olhar Certo, você ainda conta com:
                         </h1>
 
                         <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-items-center gap-10'>

@@ -51,15 +51,15 @@ export default function SectionSlide(){
                         </p>
                         
                         <p className="text-xl text-center">
-                            A Olhar Certo foi criada, com o propósito de colocar os mais avançados exames e tratamentos oftalmológicos ao alcance de todos e gerar oportunidades de negócio a médicos e investidores que desejam abrir a própria clínica.
+                            A Olhar Certo foi criada com o propósito de colocar os mais avançados exames e tratamentos oftalmológicos ao alcance de todos, além de gerar oportunidades de negócio a médicos e investidores que desejam abrir a própria clínica.
                         </p>
                         
                         <p className="text-xl text-center">
-                            Aqui você encontra profissionais altamente qualificados, tratamentos oculares com tecnologia de ponta, consultas e exames para o melhor da saúde ocular do povo brasileiro.
+                            Aqui, você encontra profissionais altamente qualificados, tratamentos oculares com tecnologia de ponta, consultas e exames voltados para a saúde ocular do povo brasileiro.
                         </p>
                         
                         <p className="text-xl text-center">
-                            Já são 30 unidades bem estruturadas presentes em 3 estados brasileiros.
+                            Já são 30 unidades bem-estruturadas presentes em 3 estados brasileiros.
                         </p>
                     </div>
                 </div>
@@ -73,11 +73,11 @@ export default function SectionSlide(){
 
                     <div className="flex flex-col gap-8 mt-8 px-0 md:px-10">
                         <p className="text-xl text-center">
-                            A SaluS é uma holding focada na entrega baseada em excelência. Resultado disso é uma estante cheia de prêmios que reconhecem e afirmam toda a nossa competência, como o <strong>Sebrae FGV</strong>, <strong>Insper</strong> e mais recentemente, a <strong>Harvard Business School e Stanford Universtity</strong>.
+                        A Salus é uma holding focada na entrega baseada em excelência. O resultado disso é uma estante cheia de prêmios que reconhecem e afirmam toda a nossa competência, como o <strong>Sebrae FGV</strong>, <strong>Insper</strong> e mais recentemente, a <strong>Harvard Business School e Stanford Universtity</strong>.
                         </p>
                         
                         <p className="text-xl text-center">
-                            Em 28 anos de experiência, reunimos as melhores oportunidades e de know-how de marcas que já se tornaram referências no mercado, resultando no melhor suporte para crescermos juntos.
+                        Em 28 anos de experiência, reunimos as melhores oportunidades e um know-how de marcas que já se tornaram referências no mercado, resultando no melhor suporte para crescermos juntos.
                         </p>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ export default function SectionVideo() {
             <div className="w-full lg:w-1/2 flex justify-center 2xl:justify-end box-border" >
                 <div className="lg:max-w-[600px] ">
                     <h1 className=" md:min-h-[85px] xl:min-h-[90px] text-4xl xl:text-6xl font-bold text-gradient mb-4">
-                        Um segmento tão lucrativo que cada vez mais atrai novos olhares
+                        Um segmento tão lucrativo que atrai novos olhares
                     </h1>
 
                     <div className="flex flex-col gap-2 text-[18px] ">

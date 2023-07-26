@@ -42,7 +42,7 @@ export default function SectionTecnologia(){
                         Tecnologia a favor
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-semibold text-center my-5">
-                        Ao ser franqueado da Olhar Certo você conta com muita tecnologia para ajudar a sua clínica oftalmológica decolar.
+                    Ao ser franqueado da Olhar Certo, você conta com muita tecnologia para ajudar a sua clínica oftalmológica a decolar.
                     </h2>
                 </div>
             

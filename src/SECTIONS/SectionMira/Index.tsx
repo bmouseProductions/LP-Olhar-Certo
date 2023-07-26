@@ -13,7 +13,7 @@ export default function SectionMira(){
                     </h2>
 
                     <p className='text-[18px] mt-5 lg:mt-10 text-center'>
-                        Com um dos mais modernos centros oftalmológicos do Brasil, o Mira conta com equipamentos de última geração para oferecer aos pacientes o que há de melhor para você.
+                        Como um dos mais modernos centros oftalmológicos do Brasil, o Mira conta com equipamentos de última geração para oferecer aos pacientes o que há de melhor para você.
                     </p>
                 </div>
 
