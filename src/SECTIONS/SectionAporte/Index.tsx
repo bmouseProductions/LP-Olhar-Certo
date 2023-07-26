@@ -1,4 +1,4 @@
-import clinica from '../../assets/imagemClinica.webp'
+import clinica from '../../assets/clinica2.webp'
 import aporte from '../../assets/aporteOC.webp'
 import Botao from '../../components/button/Index'
 

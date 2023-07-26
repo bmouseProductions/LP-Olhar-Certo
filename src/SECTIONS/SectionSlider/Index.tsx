@@ -2,20 +2,27 @@ import SliderComponent from "../../components/swiper/Index";
 
 import imagemPremiacao  from '../../assets/premiosOC.webp'
 
-import image1 from '../../assets/slides/OlharCerto1.webp'
-import image2 from '../../assets/slides/OlharCerto2.webp'
-import image3 from '../../assets/slides/OlharCerto3.webp'
-import image4 from '../../assets/slides/olharCerto4.webp'
-
+import clinica from '../../assets/clinica2.webp'
+import image1 from '../../assets/slides/slider1.webp'
+import image2 from '../../assets/slides/slider2.webp'
+import image3 from '../../assets/slides/slider3.webp'
+import image4 from '../../assets/slides/slider4.webp'
+import image5 from '../../assets/slides/slider5.webp'
+import image6 from '../../assets/slides/slider6.webp'
+import image7 from '../../assets/slides/slider7.webp'
 
 
 export default function SectionSlide(){
 
     const slideContent = [
+        <img src={clinica} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
         <img src={image1} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
         <img src={image2} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
         <img src={image3} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
-        <img src={image4} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />
+        <img src={image4} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
+        <img src={image5} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
+        <img src={image6} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
+        <img src={image7} className="rounded" alt="imagem de consultorio da franquia Olhar Certo" />,
     ];
         
     const slideCount = slideContent.length;
